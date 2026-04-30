@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<title>Checkout | SolaraJewelly</title>
+<script defer src="js/products.js"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/checkout.js"></script>
+</head>
+<body>
+<div class="diamond-rain" id="diamondRain"></div>
+<header class="site-header">
+  <a class="logo" href="index.html">Solara<span>Jewelly</span></a>
+  <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+  <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="collection.html">Collection</a>
+    <a href="about.html">Maison</a>
+    <a href="contact.html">Contact</a>
+    <button class="bag-btn" id="openBag" type="button">Bag <span id="bagCount">0</span></button>
+  </nav>
+</header>
+
+<main class="page checkout-layout">
+  <section class="checkout-card reveal">
+    <p class="eyebrow">Demo checkout</p>
+    <h1>Checkout</h1>
+    <p>This is a working front-end checkout demo. It does not process real payments.</p>
+
+    <form id="checkoutForm">
+      <div class="two">
+        <input required placeholder="First name">
+        <input required placeholder="Last name">
+      </div>
+      <input required type="email" placeholder="Email">
+      <input required placeholder="Address">
+      <div class="two">
+        <input required placeholder="City">
+        <input required placeholder="Postal code">
+      </div>
+      <input required placeholder="Card number demo: 4242 4242 4242 4242">
+      <div class="two">
+        <input required placeholder="MM/YY">
+        <input required placeholder="CVV">
+      </div>
+      <button class="btn primary full" type="submit">Place Order</button>
+    </form>
+
+    <div class="success" id="successMessage">Order placed successfully. Your demo bag has been cleared.</div>
+  </section>
+
+  <aside class="summary reveal">
+    <h2>Order Summary</h2>
+    <div id="checkoutItems"></div>
+    <div class="summary-row"><span>Subtotal</span><strong id="subtotal">$0</strong></div>
+    <div class="summary-row"><span>HST Tax</span><strong id="taxTotal">$0</strong></div>
+    <div class="summary-row"><span>Shipping</span><strong id="shippingTotal">$0</strong></div>
+    <div class="summary-row total"><span>Total</span><strong id="checkoutTotal">$0</strong></div>
+  </aside>
+</main>
+
+<aside class="bag-drawer" id="bagDrawer">
+  <div class="bag-head">
+    <h2>Your Bag</h2>
+    <button id="closeBag" type="button">×</button>
+  </div>
+  <div id="bagItems" class="bag-items"></div>
+  <div class="bag-bottom">
+    <div class="bag-total"><span>Total</span><strong id="bagTotal">$0</strong></div>
+    <a class="btn primary full" href="checkout.html">Checkout</a>
+  </div>
+</aside>
+<div class="screen-dim" id="screenDim"></div>
+</body>
+</html>

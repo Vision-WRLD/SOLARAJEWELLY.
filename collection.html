@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<title>Collection | SolaraJewelly</title>
+<script defer src="js/products.js"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/collection.js"></script>
+</head>
+<body>
+<div class="diamond-rain" id="diamondRain"></div>
+<header class="site-header">
+  <a class="logo" href="index.html">Solara<span>Jewelly</span></a>
+  <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+  <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="collection.html">Collection</a>
+    <a href="about.html">Maison</a>
+    <a href="contact.html">Contact</a>
+    <button class="bag-btn" id="openBag" type="button">Bag <span id="bagCount">0</span></button>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="page-intro reveal">
+    <p class="eyebrow">SolaraJewelly Collection</p>
+    <h1>Shop by sparkle, colour, and size.</h1>
+    <p>Each item card includes the product image and price. Use the filters, sorting, and page buttons to browse the full collection.</p>
+  </section>
+
+  <section class="shop">
+    <aside class="filters reveal">
+      <h2>Filter</h2>
+      <label for="categoryFilter">Category</label>
+      <select id="categoryFilter">
+        <option value="all">All Jewellery</option>
+        <option value="rings">Rings</option>
+        <option value="necklaces">Necklaces</option>
+        <option value="bracelets">Bracelets</option>
+        <option value="earrings">Earrings</option>
+      </select>
+
+      <label for="colourFilter">Metal colour</label>
+      <select id="colourFilter">
+        <option value="all">All Colours</option>
+        <option value="Gold">Gold</option>
+        <option value="Silver">Silver</option>
+        <option value="Rose Gold">Rose Gold</option>
+      </select>
+
+      <label for="priceFilter">Price</label>
+      <select id="priceFilter">
+        <option value="all">All Prices</option>
+        <option value="0-250">Under $250</option>
+        <option value="250-500">$250 - $500</option>
+        <option value="500-900">$500 - $900</option>
+        <option value="900-9999">$900+</option>
+      </select>
+
+      <label for="sortFilter">Sort</label>
+      <select id="sortFilter">
+        <option value="featured">Featured</option>
+        <option value="low">Price Low to High</option>
+        <option value="high">Price High to Low</option>
+        <option value="name">Name</option>
+      </select>
+
+      <button class="btn secondary full" id="clearFilters" type="button">Clear Filters</button>
+    </aside>
+
+    <section class="products-section">
+      <div class="collection-bar">
+        <h2>Jewellery</h2>
+        <p><span id="productCount">0</span> items</p>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="pagination" id="pagination"></div>
+    </section>
+  </section>
+</main>
+
+<aside class="bag-drawer" id="bagDrawer">
+  <div class="bag-head">
+    <h2>Your Bag</h2>
+    <button id="closeBag" type="button">×</button>
+  </div>
+  <div id="bagItems" class="bag-items"></div>
+  <div class="bag-bottom">
+    <div class="bag-total"><span>Total</span><strong id="bagTotal">$0</strong></div>
+    <a class="btn primary full" href="checkout.html">Checkout</a>
+  </div>
+</aside>
+<div class="screen-dim" id="screenDim"></div>
+</body>
+</html>

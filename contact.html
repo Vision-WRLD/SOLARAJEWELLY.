@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<title>Contact | SolaraJewelly</title>
+<script defer src="js/products.js"></script>
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<div class="diamond-rain" id="diamondRain"></div>
+<header class="site-header">
+  <a class="logo" href="index.html">Solara<span>Jewelly</span></a>
+  <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+  <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="collection.html">Collection</a>
+    <a href="about.html">Maison</a>
+    <a href="contact.html">Contact</a>
+    <button class="bag-btn" id="openBag" type="button">Bag <span id="bagCount">0</span></button>
+  </nav>
+</header>
+<main class="page contact-layout">
+  <section class="checkout-card reveal">
+    <p class="eyebrow">Concierge</p>
+    <h1>Contact SolaraJewelly</h1>
+    <p>Use this form for private styling, bridal jewellery, custom pieces, and general questions.</p>
+    <form>
+      <input placeholder="Name">
+      <input type="email" placeholder="Email">
+      <select>
+        <option>Private styling</option>
+        <option>Custom jewellery</option>
+        <option>Bridal set</option>
+        <option>Order question</option>
+      </select>
+      <textarea placeholder="Message"></textarea>
+      <button class="btn primary full" type="button">Send Inquiry</button>
+    </form>
+  </section>
+</main>
+<aside class="bag-drawer" id="bagDrawer">
+  <div class="bag-head">
+    <h2>Your Bag</h2>
+    <button id="closeBag" type="button">×</button>
+  </div>
+  <div id="bagItems" class="bag-items"></div>
+  <div class="bag-bottom">
+    <div class="bag-total"><span>Total</span><strong id="bagTotal">$0</strong></div>
+    <a class="btn primary full" href="checkout.html">Checkout</a>
+  </div>
+</aside>
+<div class="screen-dim" id="screenDim"></div>
+</body>
+</html>

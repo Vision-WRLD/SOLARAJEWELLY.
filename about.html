@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<title>Maison | SolaraJewelly</title>
+<script defer src="js/products.js"></script>
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<div class="diamond-rain" id="diamondRain"></div>
+<header class="site-header">
+  <a class="logo" href="index.html">Solara<span>Jewelly</span></a>
+  <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+  <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="collection.html">Collection</a>
+    <a href="about.html">Maison</a>
+    <a href="contact.html">Contact</a>
+    <button class="bag-btn" id="openBag" type="button">Bag <span id="bagCount">0</span></button>
+  </nav>
+</header>
+<main class="page">
+  <section class="editorial reveal">
+    <div>
+      <p class="eyebrow">The Maison</p>
+      <h1>Luxury with Persian warmth.</h1>
+      <p>SolaraJewelly is designed to feel elevated, polished, and memorable. The visual style combines a dark luxury base, gold highlights, soft diamond motion, and Persian-inspired arches and celestial details.</p>
+      <a class="btn primary" href="collection.html">Shop Collection</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1200&q=80" alt="Jewellery on model">
+  </section>
+</main>
+<aside class="bag-drawer" id="bagDrawer">
+  <div class="bag-head">
+    <h2>Your Bag</h2>
+    <button id="closeBag" type="button">×</button>
+  </div>
+  <div id="bagItems" class="bag-items"></div>
+  <div class="bag-bottom">
+    <div class="bag-total"><span>Total</span><strong id="bagTotal">$0</strong></div>
+    <a class="btn primary full" href="checkout.html">Checkout</a>
+  </div>
+</aside>
+<div class="screen-dim" id="screenDim"></div>
+</body>
+</html>

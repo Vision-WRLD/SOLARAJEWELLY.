@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<title>Product | SolaraJewelly</title>
+<script defer src="js/products.js"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/product.js"></script>
+</head>
+<body>
+<div class="diamond-rain" id="diamondRain"></div>
+<header class="site-header">
+  <a class="logo" href="index.html">Solara<span>Jewelly</span></a>
+  <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+  <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="collection.html">Collection</a>
+    <a href="about.html">Maison</a>
+    <a href="contact.html">Contact</a>
+    <button class="bag-btn" id="openBag" type="button">Bag <span id="bagCount">0</span></button>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="product-view reveal">
+    <div class="gallery">
+      <div class="zoom-box" id="zoomBox">
+        <img id="mainProductImage" src="" alt="Product image">
+      </div>
+      <div class="thumbs" id="thumbs"></div>
+    </div>
+
+    <div class="product-panel">
+      <p class="eyebrow" id="productCategory"></p>
+      <h1 id="productName"></h1>
+      <p class="big-price" id="productPrice"></p>
+      <p id="productDescription"></p>
+
+      <div class="option-group">
+        <h3>Metal colour</h3>
+        <div class="choice-row" id="colourChoices"></div>
+      </div>
+
+      <div class="option-group">
+        <h3>Size</h3>
+        <div class="choice-row" id="sizeChoices"></div>
+      </div>
+
+      <p class="note">Move your mouse over the image to zoom into the jewellery details.</p>
+
+      <button class="btn primary full" id="addCurrentProduct" type="button">Add to Bag</button>
+      <a class="btn secondary full" href="collection.html">Back to Collection</a>
+    </div>
+  </section>
+</main>
+
+<aside class="bag-drawer" id="bagDrawer">
+  <div class="bag-head">
+    <h2>Your Bag</h2>
+    <button id="closeBag" type="button">×</button>
+  </div>
+  <div id="bagItems" class="bag-items"></div>
+  <div class="bag-bottom">
+    <div class="bag-total"><span>Total</span><strong id="bagTotal">$0</strong></div>
+    <a class="btn primary full" href="checkout.html">Checkout</a>
+  </div>
+</aside>
+<div class="screen-dim" id="screenDim"></div>
+</body>
+</html>
